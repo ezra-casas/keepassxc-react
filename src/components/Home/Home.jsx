@@ -1,7 +1,9 @@
+import Navbar from "../../static/Navbar/Navbar";
+
 export default function Home() {
 	return (
 		<div>
-			<div>Navbar place holder</div>
+			<Navbar />
 		</div>
 	);
 }
