@@ -1,42 +1,50 @@
-.parent{
-    background-color: rgb(101, 180, 96);
-    border-radius: 23px;
-}
-
 .hero-parent{
     display: flex;
     align-items: center;
     justify-items: center;
-    height: 75vh;
+    height: 100vh;
 }
 .hero-child{
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 2rem;
+    align-items: center;
 }
 img{
-    border-radius: 23px;
+    border-radius: 40px;
     height: 100%;
-    width: auto;
 }
 .hero-section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 .hero-subtitle{
-    width: 50%;
+    width: 75%;
     text-align: left;
 }
 
 h1{
     font-size: 48px;
     font-weight: bolder;
-    color: white;
+    color: rgb(101, 180, 96);
 }
 
 .hero-child .left{
     text-align: left;
+}
+.buttons{
+    display: flex;
+    gap: 4rem;
+}
+.download{
+    color: rgb(101, 180, 96);
+    font-weight: bold;
+    border-color: rgb(101, 180, 96);
+    
+}
+
+em{
+    color: rgb(101, 180, 96);
 }

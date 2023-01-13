@@ -1,0 +1,22 @@
+.navbar{
+    background-color: rgb(101, 180, 96);
+    
+}
+.navbar .logo{
+    height: 80px;
+    display: flex;
+    gap: 1rem;
+    height: auto;
+    /* width: 120px; */
+    align-items: center;
+    justify-content: center;
+}
+.navbar .logo p{
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+.navbar .logo img{
+    max-width: 100%;
+    height: auto;
+}

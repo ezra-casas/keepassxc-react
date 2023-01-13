@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link } from "react-router-dom";
 import { element } from "./navbarScript";
+import "../navbarStyle.css";
 
 console.log(element);
 export default function Navbar() {
@@ -8,8 +9,12 @@ export default function Navbar() {
 		//
 		<nav className="navbar" role="navigation" aria-label="main navigation">
 			<div className="navbar-brand">
-				<a href="" className="navbar-item">
-					KeePassXC
+				<a href="/" className="navbar-item logo">
+					<img
+						src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/KeePassXC.svg/1920px-KeePassXC.svg.png"
+						alt="keepassXC"
+					/>
+					<p>KeePassXC</p>
 				</a>
 				{/* Hamburger Menu */}
 				<a
@@ -46,6 +51,9 @@ export default function Navbar() {
 							</a>
 							<a href="#" className="navbar-item">
 								Our Team
+							</a>
+							<a href="#" className="navbar-item">
+								Blog
 							</a>
 						</div>
 					</a>

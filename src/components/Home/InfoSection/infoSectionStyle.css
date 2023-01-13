@@ -1,0 +1,33 @@
+.infoSection-parent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.infoSection-child{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    color: rgb(101, 180, 96);
+}
+.infoSection-child p{
+    text-align: left;
+    width: 60%;
+    align-self: center;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+
+}
+.main-container :last-child{
+    padding-bottom: 1rem;
+}
+
+.infoSection-child a{
+    color: rgb(101, 180, 96);
+}
