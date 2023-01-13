@@ -1,0 +1,42 @@
+.parent{
+    background-color: rgb(101, 180, 96);
+    border-radius: 23px;
+}
+
+.hero-parent{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 75vh;
+}
+.hero-child{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+img{
+    border-radius: 23px;
+    height: 100%;
+    width: auto;
+}
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-subtitle{
+    width: 50%;
+    text-align: left;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: bolder;
+    color: white;
+}
+
+.hero-child .left{
+    text-align: left;
+}

@@ -7,6 +7,7 @@ export default function Home() {
 		<div>
 			<Navbar />
 			<Hero />
+			InfoSection
 			<Footer />
 		</div>
 	);
