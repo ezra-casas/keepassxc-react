@@ -10,15 +10,6 @@ export const Hero = () => {
 						<p className="block subtitle is-5">
 							Never forget a password again.
 						</p>
-
-						{/* <p className=" hero-subtitle">
-							Securely store passwords using industry standard encryption,
-							<br />
-						</p>
-						<p className="hero-subtitle">
-							quickly auto-type them into desktop applications, and use our
-							browser extension to log into websites.
-						</p> */}
 					</section>
 					<div className="buttons">
 						<button className="button download">Download</button>

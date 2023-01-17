@@ -34,17 +34,24 @@ h1{
 .hero-child .left{
     text-align: left;
 }
-.buttons{
-    display: flex;
-    gap: 4rem;
-}
 .download{
     color: rgb(101, 180, 96);
     font-weight: bold;
     border-color: rgb(101, 180, 96);
-    
+    box-shadow: 2px 2px 3px rgb(138, 145, 138);   
+    border-radius: 8px;
 }
 
+.buttons{
+    height: 4rem;
+    width: 8rem;
+}
+.download:hover{
+    color: rgb(56, 66, 56);
+    border-color: rgb(56, 66, 56);
+    height: 4rem;
+    width: 8rem;
+}
 em{
     color: rgb(101, 180, 96);
 }

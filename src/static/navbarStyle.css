@@ -1,6 +1,5 @@
 .navbar{
     background-color: rgb(101, 180, 96);
-    
 }
 .navbar .logo{
     height: 80px;
@@ -19,4 +18,13 @@
 .navbar .logo img{
     max-width: 100%;
     height: auto;
+}
+.navbar a{
+    color: white;
+}
+.dropdown-menu a, li:hover{
+    color: rgb(101, 180, 96);
+}
+a > p{
+    color: white
 }

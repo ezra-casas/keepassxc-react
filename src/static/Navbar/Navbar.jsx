@@ -2,9 +2,13 @@
 import { Link } from "react-router-dom";
 import { element } from "./navbarScript";
 import "../navbarStyle.css";
+import "./navbarScript";
+import { DropdownMenu } from "./DropdownMenu/DropdownMenu";
 
 console.log(element);
 export default function Navbar() {
+	const navigations = ["About", "Docs / FAQs", "Our Team", "Blog"];
+
 	return (
 		//
 		<nav className="navbar" role="navigation" aria-label="main navigation">
@@ -40,21 +44,12 @@ export default function Navbar() {
 					</a>
 
 					{/* Dropdown Menu */}
-					<a className="navbar-item dropdown is-hoverable">
-						<a className="navbar-link">More</a>
-						<div className="navbar-dropdown is-right">
-							<a href="#" className="navbar-item">
-								About
-							</a>
-							<a href="#" className="navbar-item">
-								Docs / FAQs
-							</a>
-							<a href="#" className="navbar-item">
-								Our Team
-							</a>
-							<a href="#" className="navbar-item">
-								Blog
-							</a>
+					<a className="navbar-item dropdown is-hoverable ">
+						<a className="navbar-link">
+							<p>More</p>
+						</a>
+						<div className="navbar-dropdown is-right dropdown-menu ">
+							<DropdownMenu navigations={navigations} />
 						</div>
 					</a>
 				</div>
