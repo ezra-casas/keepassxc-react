@@ -2,7 +2,7 @@ export const Footer = () => {
 	return (
 		<nav className="navbar">
 			<div className="navbar-item">
-				<p> © 2012 U-2013 2022 KeePassXC Team </p>
+				<p className="is-size-7"> © 2012 U-2013 2022 KeePassXC Team </p>
 			</div>
 			<div className="navbar-item navbar-end">
 				<a href="#" className="navbar-item">

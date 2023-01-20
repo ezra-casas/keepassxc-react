@@ -11,7 +11,7 @@ export const InfoSection = () => {
 						<em>
 							<b>
 								<a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">
-									standard 256-bit AES.
+									standard 256-bit AES.{" "}
 								</a>
 							</b>
 						</em>
