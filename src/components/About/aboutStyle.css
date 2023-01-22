@@ -1,0 +1,31 @@
+hr{
+    color: rgb(101, 180, 96);
+    background-color: rgb(101, 180, 96);
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.section-container{
+    background-color: rgb(101, 180, 96);
+    color: white;
+}
+.hero{
+    align-items: center;
+}
+section{
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+}
+section p{
+    width: 70%;
+}
+a{
+    /* text-decoration: underline; */
+    font-weight: bold;
+    color: white;
+    
+}

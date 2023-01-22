@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const DropdownMenu = (props) => {
 	const nav = props.navigations;
@@ -8,7 +9,7 @@ export const DropdownMenu = (props) => {
 			{nav.map((item) => {
 				return (
 					<li className="navbar-item" key={item} id={item}>
-						{item}
+						<Link to={`/${item}`}>{item}</Link>
 					</li>
 				);
 			})}

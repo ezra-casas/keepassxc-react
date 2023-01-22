@@ -13,13 +13,13 @@ export default function Navbar() {
 		//
 		<nav className="navbar" role="navigation" aria-label="main navigation">
 			<div className="navbar-brand">
-				<a href="/" className="navbar-item logo">
+				<Link to="/" className="navbar-item logo">
 					<img
 						src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/KeePassXC.svg/1920px-KeePassXC.svg.png"
 						alt="keepassXC"
 					/>
 					<p>KeePassXC</p>
-				</a>
+				</Link>
 				{/* Hamburger Menu */}
 				<a
 					role="button"
@@ -36,12 +36,12 @@ export default function Navbar() {
 
 			<div id="navigations" className="navbar-menu">
 				<div className="navbar-end">
-					<a href="#" className="navbar-item">
+					<Link to={`/Download`} className="navbar-item">
 						Download
-					</a>
-					<a href="#" className="navbar-item">
+					</Link>
+					<Link to="/Github" className="navbar-item">
 						GitHub
-					</a>
+					</Link>
 
 					{/* Dropdown Menu */}
 					<a className="navbar-item dropdown is-hoverable ">
