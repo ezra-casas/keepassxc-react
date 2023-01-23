@@ -6,6 +6,8 @@ import AboutRoute from "./routes/About";
 
 import "./index.css";
 import App from "./App";
+import DownloadRoute from "./routes/DownloadRoute";
+import DownloadLinux from "./routes/Downloads/DownloadLinux";
 
 const router = createBrowserRouter([
 	{
@@ -16,6 +18,14 @@ const router = createBrowserRouter([
 	{
 		path: "/About",
 		element: <AboutRoute />,
+	},
+	{
+		path: "/Download",
+		element: <DownloadRoute />,
+		children: [
+			{ path: "./Linux", element: <DownloadLinux /> },
+			{ path: "./macOs" },
+		],
 	},
 ]);
 
