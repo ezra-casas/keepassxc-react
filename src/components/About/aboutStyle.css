@@ -14,18 +14,3 @@ hr{
 .hero{
     align-items: center;
 }
-section{
-    /* display: flex; */
-    /* align-items: center;
-    justify-content: center;
-    flex-direction: column; */
-}
-section p{
-    width: 70%;
-}
-a{
-    /* text-decoration: underline; */
-    font-weight: bold;
-    color: white;
-    
-}
