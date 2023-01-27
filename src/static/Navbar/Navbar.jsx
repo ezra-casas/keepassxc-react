@@ -1,59 +1,76 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { element } from "./navbarScript";
 import "../navbarStyle.css";
 import "./navbarScript";
 import { DropdownMenu } from "./DropdownMenu/DropdownMenu";
+import styled from "styled-components";
 
-console.log(element);
+const NavStyled = styled.nav`
+	color: white;
+	background-color: rgb(101, 180, 96);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.3rem 2rem 0.3rem 2rem;
+`;
+
+const ImgStyled = styled.img`
+	width: auto;
+	height: 50px;
+`;
+
+const LogoContainer = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+`;
+
+const NavItemsContainer = styled.div`
+	display: flex;
+	justify-content: space-around;
+	gap: 2rem;
+`;
+
 export default function Navbar() {
-	const navigations = ["About", "Docs / FAQs", "Our Team", "Blog"];
-
 	return (
-		//
-		<nav className="navbar" role="navigation" aria-label="main navigation">
-			<div className="navbar-brand">
-				<Link to="/" className="navbar-item logo">
-					<img
-						src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/KeePassXC.svg/1920px-KeePassXC.svg.png"
-						alt="keepassXC"
-					/>
-					<p>KeePassXC</p>
-				</Link>
-				{/* Hamburger Menu */}
-				<a
-					role="button"
-					className="navbar-burger"
-					aria-label="menu"
-					aria-expanded="false"
-					data-target="navigations"
+		<NavStyled>
+			<div className="logo">
+				<NavLink
+					to="/"
+					className={(isActive) => {
+						return !isActive.isActive ? "unselected" : "selected";
+					}}
 				>
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-				</a>
+					<LogoContainer>
+						<ImgStyled
+							src="https://keepassxc.org/images/keepassxc-logo.svg"
+							alt="keepass-xc logo"
+						/>
+						<h1>KeePassXC</h1>
+					</LogoContainer>
+				</NavLink>
 			</div>
 
-			<div id="navigations" className="navbar-menu">
-				<div className="navbar-end">
-					<Link to={`/Download`} className="navbar-item">
-						Download
-					</Link>
-					<Link to="/Github" className="navbar-item">
-						GitHub
-					</Link>
-
-					{/* Dropdown Menu */}
-					<a className="navbar-item dropdown is-hoverable ">
-						<a className="navbar-link">
-							<p>More</p>
-						</a>
-						<div className="navbar-dropdown is-right dropdown-menu ">
-							<DropdownMenu navigations={navigations} />
-						</div>
-					</a>
-				</div>
-			</div>
-		</nav>
+			<NavItemsContainer className="nav-items">
+				<NavLink
+					to="/Download"
+					className={(isActive) => {
+						return !isActive.isActive ? "unselected" : "selected";
+					}}
+				>
+					Download
+				</NavLink>
+				<NavLink
+					to="/About"
+					className={(isActive) => {
+						return !isActive.isActive ? "unselected" : "selected";
+					}}
+				>
+					About
+				</NavLink>
+			</NavItemsContainer>
+		</NavStyled>
 	);
 }

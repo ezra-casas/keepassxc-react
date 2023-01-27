@@ -1,15 +1,6 @@
 .navbar{
     background-color: rgb(101, 180, 96);
 }
-.navbar .logo{
-    height: 80px;
-    display: flex;
-    gap: 1rem;
-    height: auto;
-    /* width: 120px; */
-    align-items: center;
-    justify-content: center;
-}
 .navbar .logo p{
     font-size: large;
     font-weight: bold;
@@ -27,4 +18,11 @@
 }
 a > p{
     color: white
+}
+
+.selected{
+    color: rgb(74, 114, 71);
+}
+.unselected{
+    color: white;
 }
