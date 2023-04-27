@@ -1,7 +1,6 @@
 .hero-parent{
     display: flex;
     align-items: center;
-    justify-items: center;
     height: 100vh;
 }
 .hero-child{
@@ -24,12 +23,12 @@ img{
     width: 75%;
     text-align: left;
 }
-/* 
-h1{
+
+.hero h1{
     font-size: 48px;
     font-weight: bolder;
     color: rgb(101, 180, 96);
-} */
+}
 
 .hero-child .left{
     text-align: left;
@@ -40,6 +39,7 @@ h1{
     border-color: rgb(101, 180, 96);
     box-shadow: 2px 2px 3px rgb(138, 145, 138);   
     border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
 }
 
 .buttons{
@@ -49,8 +49,7 @@ h1{
 .download:hover{
     color: rgb(56, 66, 56);
     border-color: rgb(56, 66, 56);
-    height: 4rem;
-    width: 8rem;
+    transform: scale(1.1);
 }
 em{
     color: rgb(101, 180, 96);

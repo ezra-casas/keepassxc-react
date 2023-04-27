@@ -1,7 +1,7 @@
 .navbar{
     background-color: rgb(101, 180, 96);
 }
-.navbar .logo p{
+.logo h1{
     font-size: large;
     font-weight: bold;
     color: white;
@@ -20,7 +20,7 @@ a > p{
     color: white
 }
 
-.selected{
+.selected, .logo h1:hover{
     color: rgb(74, 114, 71);
 }
 .unselected{
