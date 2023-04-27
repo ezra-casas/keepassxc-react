@@ -45,7 +45,7 @@ export default function Navbar() {
 				>
 					<LogoContainer>
 						<ImgStyled
-							src="https://keepassxc.org/images/keepassxc-logo.svg"
+							src="https://raw.githubusercontent.com/keepassxreboot/keepassxc/develop/share/icons/application/scalable/apps/keepassxc.svg"
 							alt="keepass-xc logo"
 						/>
 						<h1>KeePassXC</h1>
